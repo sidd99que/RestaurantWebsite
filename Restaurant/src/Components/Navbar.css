@@ -1,0 +1,71 @@
+/* Navbar.css */
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+body.light-mode {
+  background-color: white;
+  color: black;
+}
+
+/* Navbar specific styles */
+.navbar-nav .nav-link {
+  color: black; /* Set nav link color to black */
+  transition: color 0.3s, border-bottom-color 0.3s;
+  margin-right: 20px; /* Add space between navbar links */
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffc107; /* Yellow color on hover */
+}
+
+.navbar-nav .nav-link:visited {
+  color: white; /* White color for visited links */
+  border-bottom: 2px solid white; /* Underline with white color */
+}
+
+.navbar-brand h2 {
+  font-size: 2rem;
+  color: #ffc107;
+}
+
+/* Additional custom styles */
+.navbar-toggler {
+  border: none; /* Remove border from toggler */
+}
+
+.navbar-toggler-icon {
+  background-color: white; /* Set toggler icon color to white */
+}
+
+.btn-outline-info {
+  border-color: #ffc107;
+  color: #ffc107;
+}
+
+.btn-outline-info:hover {
+  background-color: #ffc107;
+  color: #000;
+}
+.nav-link {
+  position: relative;
+}
+
+.hover-underline {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-link:hover .hover-underline {
+  width: 100%;
+}
+
+.nav-link.active .hover-underline {
+  width: 100%;
+}
